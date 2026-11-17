@@ -1,0 +1,161 @@
+/* Picasso landing page styles.
+   Plain CSS (no @apply, no Tailwind config needed). Everything is scoped to
+   .pb-landing / .pb-* so it can't affect the rest of your site. Rules sit in the
+   "components" cascade layer, so Tailwind utility classes always win over them. */
+@layer theme, base, components, utilities;
+
+/* Variable font: one file covers weights 400–800 */
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/fonts/Baloo2-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer components {
+  .pb-landing {
+    --pb-font: "Baloo 2", ui-rounded, system-ui, sans-serif;
+
+    position: relative;
+    min-height: 100vh;
+    font-family: var(--pb-font);
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("/images/landing/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -50px;
+    overflow-y: hidden;
+  }
+
+  :where(.pb-landing) p {
+    margin: 0 0 1rem;
+    font-family: var(--pb-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+  }
+  :where(.pb-landing) :is(h1, h2, h3, h4) {
+    margin: 0 0 0.5rem;
+    font-family: var(--pb-font);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  :where(.pb-landing) :is(button, input, textarea, select) {
+    font-family: var(--pb-font);
+  }
+  :where(.pb-landing) button {
+    cursor: pointer;
+  }
+
+  .pb-container,
+  .pb-glass {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+  }
+  .pb-glass {
+    margin-block: 30px;
+    padding: 20px 27px;
+    border: 2px dotted #868686;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .pb-heading {
+    font-family: var(--pb-font);
+    font-size: 23px;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    
+  }
+
+  .pb-btn-red,
+  .pb-btn-black {
+    display: inline-block;
+    padding: 7px 20px;
+    border: 2px solid #fff;
+    border-radius: 37px;
+    font-family: var(--pb-font);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  .pb-btn-red { background: #70167E; }
+  .pb-btn-black { background: #000; }
+  .pb-btn-red:focus-visible,
+  .pb-btn-black:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
+
+  .pb-field {
+    display: block;
+    width: 100%;
+    margin: 9px 0;
+    padding: 0 10px;
+    border: 1px solid #999696;
+    border-radius: 4px;
+    font-family: var(--pb-font);
+    outline: none;
+  }
+  .pb-field:focus { border-color: #70167E; }
+
+  @media (min-width: 576px) {
+    .pb-container, .pb-glass { max-width: 540px; }
+    .pb-heading { font-size: 26px; text-align: left; }
+    .pb-btn-red, .pb-btn-black { font-size: 18px; }
+  }
+  @media (min-width: 768px) {
+    .pb-container, .pb-glass { max-width: 720px; }
+    .pb-heading { font-size: 48px; }
+  }
+  @media (min-width: 992px) {
+    .pb-container, .pb-glass { max-width: 960px; }
+  }
+  @media (min-width: 1200px) {
+    .pb-container, .pb-glass { max-width: 1140px; }
+  }
+  @media (min-width: 1400px) {
+    .pb-container, .pb-glass { max-width: 1320px; }
+  }
+  @media (min-width: 1441px) {
+    :where(.pb-landing) p { font-size: 18px; }
+    .pb-heading { font-size: 56px; }
+  }
+}
+
+.float-up-down {
+  animation: floatVertical 4s ease-in-out infinite;
+}
+
+@keyframes floatVertical {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Left and right animation */
+.float-left-right {
+  animation: floatHorizontal 5s ease-in-out infinite;
+}
+
+@keyframes floatHorizontal {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}

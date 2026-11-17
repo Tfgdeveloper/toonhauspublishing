@@ -1,0 +1,27 @@
+const DIR = "/images/services";
+
+export const SERVICE_ABOUT_IMAGES: Record<string, string> = {
+    "children-s-book-writing-story-development": `${DIR}/children-s-book-writing-story-development.png`,
+    "children-s-book-editing-manuscript-review": `${DIR}/children-s-book-editing-manuscript-review.png`,
+    "children-s-book-formatting-ebook-conversion": `${DIR}/children-s-book-formatting-ebook-conversion.png`,
+    "children-s-book-publishing-isbn-services": `${DIR}/children-s-book-publishing-isbn-services.png`,
+    "children-s-book-distribution-global-publishing": `${DIR}/children-s-book-distribution-global-publishing.png`,
+    "children-s-book-illustration-services": `${DIR}/children-s-book-illustration-services.png`,
+    "character-design-development": `${DIR}/character-design-development.png`,
+    "book-cover-interior-design": `${DIR}/book-cover-interior-design.png`,
+    "print-ready-ebook-design-files": `${DIR}/print-ready-ebook-design-files.png`,
+    "2d-3d-animation-services": `${DIR}/2d-3d-animation-services.png`,
+    "book-trailers-video-content": `${DIR}/book-trailers-video-content.png`,
+    "audiobooks-narration-voiceovers": `${DIR}/audiobooks-narration-voiceovers.png`,
+    "interactive-animated-ebooks": `${DIR}/interactive-animated-ebooks.png`,
+    "amazon-book-marketing-optimization": `${DIR}/amazon-book-marketing-optimization.png`,
+    "book-launch-promotional-campaigns": `${DIR}/book-launch-promotional-campaigns.png`,
+    "social-media-influencer-marketing": `${DIR}/social-media-influencer-marketing.png`,
+    "author-website-email-marketing": `${DIR}/author-website-email-marketing.png`,
+    "book-fairs-libraries-bookstore-promotion": `${DIR}/book-fairs-libraries-bookstore-promotion.png`,
+    "school-educational-book-marketing": `${DIR}/school-educational-book-marketing.png`,
+    "author-character-branding": `${DIR}/author-character-branding.png`,
+    "character-merchandise-design": `${DIR}/character-merchandise-design.png`,
+    "educational-materials-printable-activities": `${DIR}/educational-materials-printable-activities.png`,
+    "character-licensing-commercial-development": `${DIR}/character-licensing-commercial-development.png`,
+};
