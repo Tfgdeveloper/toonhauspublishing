@@ -35,7 +35,7 @@ export const COMPANY = {
     name: "Toon Haus Publishing",
     email: "support@toonhauspublishing.com",
     phone: "(949) 828-2170",
-    address: "2913 El Camino Real, Tustin, CA 92782, United States",
+    address: "2849 Kramer Dr, Greenwood, IN 46143",
     website: "https://toonhauspublishing.com/",
 } as const;
 

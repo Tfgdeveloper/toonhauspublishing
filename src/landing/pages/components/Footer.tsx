@@ -176,10 +176,10 @@ export default function Footer() {
                             />
 
                             <ContactRow
-                                href="https://www.google.com/maps/search/?api=1&query=2913+El+Camino+Real%2C+Tustin%2C+CA+92782%2C+United+States"
+                                href="https://maps.app.goo.gl/rEspyv3xBk8gwWuj9"
                                 icon={MapPin}
                                 label="Our Headquarters"
-                                value="2913 El Camino Real, Tustin, CA 92782, United States"
+                                value="2849 Kramer Dr, Greenwood, IN 46143"
                                 external
                             />
                         </div>

@@ -116,7 +116,7 @@ function LinkList({ links }: { links: { label: string; to: string }[] }) {
 function ContactRow({ href, icon: Icon, label, value, external }: { href: string; icon: typeof Phone; label: string; value: string; external?: boolean }) {
     return (
         <a
-            href={href}
+            href={href} 
             target={external ? "_blank" : undefined}
             rel={external ? "noopener noreferrer" : undefined}
             className="group flex w-fit items-center gap-3.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-orange"
@@ -187,10 +187,10 @@ export default function Footer() {
                             />
 
                             <ContactRow
-                                href="https://www.google.com/maps/search/?api=1&query=2913+El+Camino+Real%2C+Tustin%2C+CA+92782%2C+United+States"
+                                href="https://maps.app.goo.gl/rEspyv3xBk8gwWuj9"
                                 icon={MapPin}
                                 label="Our Headquarters"
-                                value="2913 El Camino Real, Tustin, CA 92782, United States"
+                                value="2849 Kramer Dr, Greenwood, IN 46143"
                                 external
                             />
                         </div>

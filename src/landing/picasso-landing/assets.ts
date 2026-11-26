@@ -31,7 +31,7 @@ export const CONTACT = {
   phoneHref: "tel:+19498282170",
   email: "support@toonhauspublishing.com",
   addresses: [
-    "2913 El Camino Real, Tustin, CA 92782, United States",
+    "2849 Kramer Dr, Greenwood, IN 46143",
     
   ],
 };
